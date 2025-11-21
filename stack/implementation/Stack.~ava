@@ -1,0 +1,70 @@
+public class Stack<ContentType>{
+  private class StackNode {
+
+    private ContentType content = null;
+    private StackNode nextNode = null;
+   
+    public StackNode(ContentType pContent) {
+      content = pContent;
+      nextNode = null;
+    }
+
+    public void setnext(StackNode pNext) {
+      nextNode = pNext;
+    }
+    
+    public StackNode getNext() {
+      return nextNode;
+    }
+
+    public ContentType getContent() {
+      return content;
+    }
+
+  }
+
+  private StackNode head;
+
+  public Stack(){
+    
+  }
+  
+  public boolean isEmpty(){
+    
+    if (head == null) {
+      return true; 
+    } // end of if
+    else {
+      return false;
+    } // end of if-else
+  }
+  
+  public ContentType top(){
+    if (this.head != null) {
+      return this.head.getContent();
+    } // end of if
+    else {
+      return null;
+    } // end of if-else
+  }
+  
+  
+  public void push(ContentType pContent){
+    if (pContent != null) { 
+      StackNode n1 = new StackNode(pContent);
+      if (head != null) {
+        n1.setnext(head);
+      } 
+      this.head = n1;
+      
+    }
+  }
+  
+  public void pop(){
+    if (this.head != null) {
+      head = head.getNext();
+    } // end of if
+    
+    }
+  
+}

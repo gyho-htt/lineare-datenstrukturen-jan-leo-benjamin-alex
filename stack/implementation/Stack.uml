@@ -1,0 +1,35 @@
+﻿[Files]
+File0=\\iserv.gyho-hattingen.de\home\Q1\Informatik\LineareDatenstrukturenQ1.1\dynamische Datenstrukturen\lineare-datenstrukturen-jan-leo-benjamin-alex\stack\implementation\Stack.java
+
+[Box:  - Stack$StackNode]
+X=20
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+
+[Box:  - Stack<ContentType>]
+X=316
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+
+[Diagram]
+Comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=12
+ShowObjectDiagram=0
+
+[Connections]
+V0=Stack<ContentType>#Stack$StackNode#AssociationDirected####0#0#0###0#0
+

@@ -148,11 +148,10 @@ public class List<ContentType>{
 
       } 
          
-      // insert noch gar nicht fertig, was meint vor? braucht ein node einen Vor und nachgänger
-  // oder reicht ein Nachfolger? -> Nachfolger reicht glaube ich. Ist der andere Code logisch
+    
       
       public void concat(List<ContentType> pList){
-            if (aktuellesNode.getContent() != pList.getContent() || pList != null || !pList.isEmpty()){
+            if (aktuellesNode.getContent() != pList.getContent() || pList != null || !pList.isEmpty()){ // contenttype der selbe Contenttype? 
               
             letztes.setBehind(pList.getFirst());
             letztes = pList.getLast();
